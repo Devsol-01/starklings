@@ -1,6 +1,6 @@
 
 
-// I AM NOT DONE
+
 
 #[test]
 #[available_gas(200000)]
@@ -10,6 +10,7 @@ fn test_loop() {
     let result = loop {
         if counter == 5 {
     //TODO return a value from the loop
+    break counter;
         }
         counter += 1;
     };
